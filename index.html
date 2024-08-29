@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+
+<html>
+<!--Here we make sure that our page has a title that pops up on the tab of website. We also made sure to add
+load static so as to ensure that we can load our static files successfully. -->
+<head>
+    <title>Tawonga Taibu CV web page.</title>
+    
+    <link href = "index.css" rel = "stylesheet" type = "text/css">
+</head>
+<!--In our body, we have the page's main heading and its image too. The information for the user is also available in this part of the website.-->
+    <body>
+        <h1>TAWONGA TAIBU CURRICULUM VITAE </h1>
+        <picture>
+            <source media ="(max-width:600px)" srcset = "IMG_2841.jpg">
+            <source media ="(min-width:450px)" srcset = "IMG_2841.jpg">
+            <img src = "{IMG_2841.jpeg}">
+        </picture>
+        
+        <p>
+            Hello! I'm Tawonga Taibu, an aspiring softwware engineer with a background in computer science from high school.
+            Over the past few months, I've gained experience with SQL, SQLite as well as working with HTML. My journey in tech
+            started with a curiosity for how things work behind the scenes for software applications.My passions lie in crafting
+            innovating solutions and exploring the intersection of technology and sustainability. I believe that technology can 
+            change the way we look at problems since it can be stepping stone to innovative solutions.Through this passion, I am able 
+            to keep up with the velocity of changes around the technology industry and ultimately work towards building a better 
+            environment for all humanity. In as much as I can be invested in my work and passions, I really enjoy playing basketball and reading
+            novels during my extra time. Basketball in particular helps me to socialize with other people and just refresh my mind from 
+            the day to day problems we face as human beings.
+        </p>
+<!--This heading is also part of our body and we made sure that our information is in an unordered lists. Some parts of the 
+list have <a> tags used for references links to other pages/platforms.-->
+        <h2>PERSONAL INFO:</h2>
+        <ul> 
+            <li>NAME: TAWONGA TAIBU</li>
+            <li>CONTACT: +27684431228</li>
+            <li>EMAIL ADDRESS: <a target="_blank" href = "mailto:tawongataibu741@gmail.com">tawongataibu5@gmail.com</a></li>
+            <li>INSTAGRAM: <a target ="_blank" href = "https://www.instagram.com/tawonga.taibu/">tawonga.taibu</a></li>
+            <li>OTHER PROFILES: <a target ="_blank" href = "https://www.linkedin.com/in/tawonga-taibu-29a533296/overlay/about-this-profile/?lipi=urn%3Ali%3Apage%3Ad_flagship3_profile_view_base%3ByYSH78TmSk2nkXr9r9sHrw%3D%3D">www.linkedin.com/in/tawonga-taibu-29a533296</a></li>
+        </ul>
+
+        <h2>SKILLS AND COMPETANCES:</h2>
+        <ul> 
+            <li>2 years Python experience.</li>
+            <li>SQL</li>
+            <li>SQLite</li>
+            <li>Django</li>
+            <li>AWS</li>
+            <li>IELTS ENGLISH</li>
+        </ul>
+
+        <h2>EDUCATIONAL BACKGORUND</h2>
+        <p>
+            I am currently looking forward to studying a BSc degree in Electrical and Electronics Engineering upon completing my bootcamp and looking forward to 
+            getting some work experience before I start a new academic year because I strongly believe any form of education has to be complimented by application 
+            in order to harness a person's true potential. This would definitely help me stay updated about the growing trends around software engineering and technology 
+            from different industries.I am also hoping to continue with my studies in research and academia particularly in the fields of ever-evolving fields of Generative 
+            Artificial Intelligence and Renewable-Energy.
+        </p>
+<!--Our page also has a form that's using the get method to acquire information. The form has an input of type'search
+and a button to submit the request.-->
+        <form action = "index.html" method="get">
+            <label for = "site search">SEARCH CV:</label>
+            <input type = "search" id = "site search" name = "CV"/>
+            <button>SEARCH</button>
+        </form><br>
+        <br>
+<!--Unlike the other form, this one uses the method'post' to give feedback to the webpage owner. This form has two input types and 
+a textarea specifically designed for long feedbacks. It also has a submit button which works the same way as the one from the other form.-->
+        <form action = "index.html" method = "post">
+            <label>NAME</label>
+            <input type = "text"><br>
+            <label>EMAIL ADDRESS</label>
+            <input type = "email"><br>
+            <label>FEEDBACK</label>
+            <textarea id = "FEEDBACK" name = "FEEDBACK" rows="10" columns = "50" placeholder="Enter your feedback here"></textarea>
+            <button>SUBMIT</button>
+        </form>
+
+    </body>
+</html>
+
+<!--References
+ Shadhin, F. (2022, January 6). The MVT Design Pattern of Django- Python in Plain English.
+ https://python.plainenglish.io/the-mvt-design-pattern-of-django-8fd47c61f582
+ Django documentation. (n.d.). Django Software Foundation. Retrieved October 18, 2022,
+ from https://docs.djangoproject.com/en/4.1
+-->

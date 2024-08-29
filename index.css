@@ -1,0 +1,108 @@
+p {
+    color: rgb(233, 237, 245);
+    font-family: Arial, Helvetica;
+    background-color: rgb(110, 110, 118);
+    margin-top: 0;
+    }
+body {
+    text-align: left;
+    display: grid;
+    grid-gap: 0.5em;
+    grid-template-rows:auto auto 1fr;
+    min-height: 100vh;
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    margin: 20px;
+    padding: 15px;
+    background-color: #f4f4f4;
+}
+header {
+    grid-column:span 2;
+    background: #333;
+    color: #fff;
+    padding: 15px;
+    text-align: center;
+}
+
+header h1 {
+    margin: 0; 
+    font-size: 2.5rem;
+}
+
+main {
+    padding: 1rem;
+}
+
+img {
+    border-radius: 40%;
+    max-height: 200px;
+    object-fit: cover;
+    margin-bottom: 0;
+    display: block;
+}
+
+h2 {
+    border-bottom: 2px solid #333;
+    padding-bottom: 0.5rem;
+    margin-bottom: 1rem;
+    text-align: left;
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+ul li {
+    background: #fff;
+    padding: 0.5rem;
+    margin-bottom: 0.5rem;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+form {
+    background: #fff;
+    padding: 1rem;
+    margin-top: 1rem;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    text-align: left;
+}
+
+form label {
+    display: block;
+    margin-bottom: 0.5rem;
+}
+
+form input, form textarea {
+    width: 100%;
+    padding: 0.5rem;
+    margin-bottom: 1rem;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+form button {
+    background: #240a67;
+    color: #fff;
+    padding: 0.5rem 1rem;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+form button:hover {
+    background: #555;
+}
+
+footer {
+    background: #333;
+    color: #fff;
+    text-align: left;
+    padding: 1rem 0;
+    position: absolute;
+    width: 100%;
+    bottom: 0;
+    grid-area: footer;
+}
